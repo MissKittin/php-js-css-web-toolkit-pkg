@@ -1,0 +1,88 @@
+{
+    "packages": {
+        "misskittin/php-js-css-web-toolkit": {
+            "dev-master": {
+                "name": "misskittin/php-js-css-web-toolkit",
+                "description": "MissKittin web toolkit",
+                "homepage": "https://github.com/MissKittin/php-js-css-web-toolkit/",
+                "authors": [
+                    {
+                        "name": "MissKittin@GitHub",
+                        "homepage": "https://github.com/MissKittin"
+                    }
+                ],
+                "type": "library",
+                "license": "LGPL-3.0-only",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "dist": {
+                    "url": "https://github.com/MissKittin/php-js-css-web-toolkit/archive/refs/heads/master.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "php": "^7.1 || ^8.0",
+                    "misskittin/php-js-css-web-toolkit-pkg": "dev-master"
+                }
+            }
+        },
+        "misskittin/php-js-css-web-toolkit-extras": {
+            "dev-master": {
+                "name": "misskittin/php-js-css-web-toolkit-extras",
+                "description": "MissKittin web toolkit extras",
+                "homepage": "https://github.com/MissKittin/php-js-css-web-toolkit-extras/",
+                "authors": [
+                    {
+                        "name": "MissKittin@GitHub",
+                        "homepage": "https://github.com/MissKittin"
+                    }
+                ],
+                "type": "library",
+                "license": "LGPL-3.0-only",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "dist": {
+                    "url": "https://github.com/MissKittin/php-js-css-web-toolkit-extras/archive/refs/heads/master.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "php": "^7.1 || ^8.0",
+                    "misskittin/php-js-css-web-toolkit": "dev-master"
+                }
+            }
+        },
+        "misskittin/php-js-css-web-toolkit-pkg": {
+            "dev-master": {
+                "name": "misskittin/php-js-css-web-toolkit-pkg",
+                "description": "PHP JS CSS web toolkit integration with Composer",
+                "homepage": "https://github.com/MissKittin/php-js-css-web-toolkit-pkg/",
+                "authors": [
+                    {
+                        "name": "MissKittin@GitHub",
+                        "homepage": "https://github.com/MissKittin"
+                    }
+                ],
+                "type": "composer-plugin",
+                "license": "LGPL-3.0-only",
+                "version": "dev-master",
+                "version_normalized": "9999999-dev",
+                "dist": {
+                    "url": "https://github.com/MissKittin/php-js-css-web-toolkit-pkg/archive/refs/heads/master.zip",
+                    "type": "zip"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "MissKittin\\PhpJsCssWebToolkitPkg\\": "src/"
+                    },
+                    "files": ["bootstrap.php"]
+                },
+                "require": {
+                    "php": "^7.1 || ^8.0",
+                    "composer-plugin-api": ">=1.0"
+                },
+                "extra": {
+                    "class": "MissKittin\\PhpJsCssWebToolkitPkg\\Plugin"
+                }
+            }
+        }
+    }
+}
