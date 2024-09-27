@@ -1,0 +1,27 @@
+{
+    "name": "misskittin/php-js-css-web-toolkit-pkg",
+    "type": "composer-plugin",
+    "description": "PHP JS CSS web toolkit integration with Composer",
+    "homepage": "https://github.com/MissKittin/php-js-css-web-toolkit-pkg/",
+    "readme": "README.md",
+    "license": "LGPL-3.0-only",
+    "authors": [
+        {
+            "name": "MissKittin@GitHub",
+            "homepage": "https://github.com/MissKittin"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MissKittin\\PhpJsCssWebToolkitPkg\\": "src/"
+        },
+        "files": ["bootstrap.php"]
+    },
+    "require": {
+        "php": "^7.1 || ^8.0",
+        "composer-plugin-api": ">=1.0"
+    },
+    "extra": {
+        "class": "MissKittin\\PhpJsCssWebToolkitPkg\\Plugin"
+    }
+}
