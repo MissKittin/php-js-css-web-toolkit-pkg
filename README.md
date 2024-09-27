@@ -8,6 +8,9 @@ composer init
 # add repository
 composer config repositories.misskittin composer "https://raw.githubusercontent.com/MissKittin/php-js-css-web-toolkit-pkg/repo/github"
 
+# allow required plugin
+composer config allow-plugins.misskittin/php-js-css-web-toolkit-pkg true
+
 # remove GPL libraries (optional)
 composer config --json extra.php-js-css-web-toolkit-remove-gpl true
 
@@ -20,6 +23,19 @@ composer require misskittin/php-js-css-web-toolkit-extras
 Create a `composer.json` in the project root directory:
 ```
 {
+    "name": "vendor/name",
+    "description": "Example description",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vendor\\Name\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Example author"
+        }
+    ],
     "repositories": {
         "misskittin": {
             "type": "composer",
@@ -32,6 +48,11 @@ Create a `composer.json` in the project root directory:
     },
     "extra": {
         "php-js-css-web-toolkit-remove-gpl": false
+    },
+    "config": {
+        "allow-plugins": {
+            "misskittin/php-js-css-web-toolkit-pkg": true
+        }
     }
 }
 
