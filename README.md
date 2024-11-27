@@ -15,6 +15,7 @@ Also there is no need for manual installation - the plugin is a dependency of th
 * creates a cache for the `php_polyfill` component
 * creates autoloader using `autoloader-generator.php` tool
 * automatically includes the `php_polyfill` component
+* allows easy interaction with tools
 
 ### Commands
 * `composer tk tool-name [tool-args]`  
@@ -23,12 +24,24 @@ Also there is no need for manual installation - the plugin is a dependency of th
 	run tool from toolkit component
 * `composer tkcp library-file.ext [path/to/output-file]`  
 	copy library from toolkit
+* `composer tkcp library-file.ext [path/to/output-file]`  
+	copy library from toolkit
+* `composer tk-disable-polyfill true|false`  
+	temporarily disable autoloading of `php_polyfill` component
 
 ### Remove GPL libraries
 Add an option to the `extra` section in `composer.json`:
 ```
 "extra": {
     "php-js-css-web-toolkit-remove-gpl": true
+}
+```
+
+### Disable autoloading of php_polyfill component
+Add an option to the `extra` section in `composer.json`:
+```
+"extra": {
+    "php-js-css-web-toolkit-disable-php-polyfill": true
 }
 ```
 
@@ -39,7 +52,7 @@ Add an option to the `extra` section in `composer.json`:
 	require './vendor/autoload.php';
 
 	// load rand_str.php library
-	load_function('rand_str');
+	MissKittin\load_function('rand_str');
 
 	echo rand_str(10);
 ?>
