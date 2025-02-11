@@ -99,7 +99,6 @@
 			if(!PluginHelper::isToolkitInstalled())
 				return;
 
-			$packageVersions=PluginHelper::getPackageVersions($this->packageData);
 			$extrasInstalled=PluginHelper::areExtrasInstalled();
 
 			if(
@@ -111,6 +110,8 @@
 				)
 			)
 				$this->openDatabase();
+
+			$packageVersions=PluginHelper::getPackageVersions($this->packageData);
 
 			$this->removeGpl(
 				$this->database,

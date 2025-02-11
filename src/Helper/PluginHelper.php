@@ -40,7 +40,7 @@
 					case self::EXTRAS:
 					case self::PKG:
 						$packageData[$packageName]=[
-							$package->getFullPrettyVersion(),
+							$package->getVersion(),
 							$composer
 							->	getInstallationManager()
 							->	getInstallPath($package)
@@ -202,6 +202,7 @@
 			putenv('TK_BIN='.$dirs['tk_bin']);
 			putenv('TK_COM='.$dirs['tk_com']);
 			putenv('TK_LIB='.$dirs['tk_lib']);
+			putenv('TK_COMPOSER='.$dirs['tk'].'/../..');
 
 			return self::class;
 		}
