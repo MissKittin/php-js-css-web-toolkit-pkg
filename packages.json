@@ -23,6 +23,29 @@
                     "php": "^7.1 || ^8.0",
                     "misskittin/php-js-css-web-toolkit-pkg": "dev-master"
                 }
+            },
+            "1.0": {
+                "name": "misskittin/php-js-css-web-toolkit",
+                "description": "MissKittin web toolkit",
+                "homepage": "https://github.com/MissKittin/php-js-css-web-toolkit/",
+                "authors": [
+                    {
+                        "name": "MissKittin@GitHub",
+                        "homepage": "https://github.com/MissKittin"
+                    }
+                ],
+                "type": "library",
+                "license": "LGPL-3.0-only",
+                "version": "1.0",
+                "version_normalized": "1.0.0.0",
+                "dist": {
+                    "url": "https://github.com/MissKittin/php-js-css-web-toolkit/archive/refs/tags/v1.0.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "php": "^7.1 || ^8.0",
+                    "misskittin/php-js-css-web-toolkit-pkg": "^1.0"
+                }
             }
         },
         "misskittin/php-js-css-web-toolkit-extras": {
@@ -48,6 +71,29 @@
                     "php": "^7.1 || ^8.0",
                     "misskittin/php-js-css-web-toolkit": "dev-master"
                 }
+            },
+            "1.0": {
+                "name": "misskittin/php-js-css-web-toolkit-extras",
+                "description": "MissKittin web toolkit extras",
+                "homepage": "https://github.com/MissKittin/php-js-css-web-toolkit-extras/",
+                "authors": [
+                    {
+                        "name": "MissKittin@GitHub",
+                        "homepage": "https://github.com/MissKittin"
+                    }
+                ],
+                "type": "library",
+                "license": "LGPL-3.0-only",
+                "version": "1.0",
+                "version_normalized": "1.0.0.0",
+                "dist": {
+                    "url": "https://github.com/MissKittin/php-js-css-web-toolkit-extras/archive/refs/tags/v1.0.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "php": "^7.1 || ^8.0",
+                    "misskittin/php-js-css-web-toolkit": "^1.0"
+                }
             }
         },
         "misskittin/php-js-css-web-toolkit-pkg": {
@@ -67,6 +113,38 @@
                 "version_normalized": "9999999-dev",
                 "dist": {
                     "url": "https://github.com/MissKittin/php-js-css-web-toolkit-pkg/archive/refs/heads/master.zip",
+                    "type": "zip"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "MissKittin\\PhpJsCssWebToolkitPkg\\": "src/"
+                    },
+                    "files": ["bootstrap.php"]
+                },
+                "require": {
+                    "php": "^7.1 || ^8.0",
+                    "composer-plugin-api": ">=1.0"
+                },
+                "extra": {
+                    "class": "MissKittin\\PhpJsCssWebToolkitPkg\\Plugin"
+                }
+            },
+            "1.0": {
+                "name": "misskittin/php-js-css-web-toolkit-pkg",
+                "description": "PHP JS CSS web toolkit integration with Composer",
+                "homepage": "https://github.com/MissKittin/php-js-css-web-toolkit-pkg/",
+                "authors": [
+                    {
+                        "name": "MissKittin@GitHub",
+                        "homepage": "https://github.com/MissKittin"
+                    }
+                ],
+                "type": "composer-plugin",
+                "license": "LGPL-3.0-only",
+                "version": "1.0",
+                "version_normalized": "1.0.0.0",
+                "dist": {
+                    "url": "https://github.com/MissKittin/php-js-css-web-toolkit-pkg/archive/refs/tags/v1.0.zip",
                     "type": "zip"
                 },
                 "autoload": {

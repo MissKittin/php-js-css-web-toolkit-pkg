@@ -14,6 +14,9 @@ composer config allow-plugins.misskittin/php-js-css-web-toolkit-pkg true
 # remove GPL libraries (optional)
 composer config --json extra.php-js-css-web-toolkit-remove-gpl true
 
+# disable php_polyfill component (optional)
+composer config --json extra.php-js-css-web-toolkit-disable-php-polyfill true
+
 # install packages
 composer require misskittin/php-js-css-web-toolkit
 composer require misskittin/php-js-css-web-toolkit-extras
@@ -47,12 +50,16 @@ Create a `composer.json` in the project root directory:
         "misskittin/php-js-css-web-toolkit-extras": "^1.0"
     },
     "extra": {
-        "php-js-css-web-toolkit-remove-gpl": false
+        "php-js-css-web-toolkit-remove-gpl": false,
+        "php-js-css-web-toolkit-disable-php-polyfill": false
     },
     "config": {
         "allow-plugins": {
             "misskittin/php-js-css-web-toolkit-pkg": true
-        }
+        },
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
     }
 }
 
@@ -60,8 +67,11 @@ Create a `composer.json` in the project root directory:
 
 ### Packages
 * `misskittin/php-js-css-web-toolkit`
+	[1.0](https://github.com/MissKittin/php-js-css-web-toolkit/tree/v1.0)
 	[dev-master](https://github.com/MissKittin/php-js-css-web-toolkit)
 * `misskittin/php-js-css-web-toolkit-extras`
+	[1.0](https://github.com/MissKittin/php-js-css-web-toolkit-extras/tree/v1.0)
 	[dev-master](https://github.com/MissKittin/php-js-css-web-toolkit-extras)
 * `misskittin/php-js-css-web-toolkit-pkg`
+	[1.0](https://github.com/MissKittin/php-js-css-web-toolkit-pkg/tree/v1.0)
 	[dev-master](https://github.com/MissKittin/php-js-css-web-toolkit-pkg)
