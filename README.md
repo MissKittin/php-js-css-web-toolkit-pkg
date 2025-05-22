@@ -24,8 +24,6 @@ Also there is no need for manual installation - the plugin is a dependency of th
 	run tool from toolkit component
 * `composer tkcp library-file.ext [path/to/output-file]`  
 	copy library from toolkit
-* `composer tkcp library-file.ext [path/to/output-file]`  
-	copy library from toolkit
 * `composer tk-disable-polyfill true|false`  
 	temporarily disable autoloading of `php_polyfill` component
 
